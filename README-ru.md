@@ -43,3 +43,15 @@ sudo docker-compose down
 ```bash
 sudo docker-compose up
 ```
+
+## Отправка на продакшен
+
+```bash
+sudo docker-compose run node /bin/bash
+cd /content
+rm -rfv build
+npm run build
+npm run deploy
+exit
+sudo docker-compose down
+```

@@ -43,3 +43,15 @@ Starting the server:
 ```bash
 sudo docker-compose up
 ```
+
+## Sending to production
+
+```bash
+sudo docker-compose run node /bin/bash
+cd /content
+rm -rfv build
+npm run build
+npm run deploy
+exit
+sudo docker-compose down
+```
