@@ -7,7 +7,7 @@ function Bio()
         <div>
             <h1 align="center">Pavel Innokentevich Galanin</h1>
             <div className={styles.img}>
-                <img src={myImg} />
+                <img src={myImg} alt="" />
             </div>
         </div>
     );
