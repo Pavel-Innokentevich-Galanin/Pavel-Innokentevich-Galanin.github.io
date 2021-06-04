@@ -1,0 +1,14 @@
+.img
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.img > img
+{
+    display: block;
+    width: 100%;
+}
