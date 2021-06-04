@@ -1,0 +1,26 @@
+.item
+{
+    width: calc(100% - 8px * 2);
+    display: flex;
+    padding: 8px;
+}
+
+.text
+{
+    width: 50%;
+}
+
+.progress_bar
+{
+    width: 50%;
+    height: 20px;
+    border: 1px solid #06c;
+    border-radius: 4px;
+}
+
+.progress_bar__line
+{
+    display: block;
+    height: 100%;
+    background-color: orange;
+}
