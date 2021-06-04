@@ -1,0 +1,63 @@
+.b_socials
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social_icon
+{
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    margin: 8px;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.social_icon > svg
+{
+    color: white
+}
+
+.social_icon:hover
+{
+    background-color: white;
+}
+
+.social_icon:hover > svg
+{
+    color: black;
+}
+
+/* telegram */
+
+.telegram
+{
+    background-color: #27a7e5;
+    border: 1px solid #27a7e5;
+}
+
+.telegram:hover > svg
+{
+    color: #27a7e5;
+}
+
+/* email */
+
+.email
+{
+    background-color: grey;
+    border: 1px solid grey;
+}
+
+.email:hover > svg
+{
+    color: grey;
+}
