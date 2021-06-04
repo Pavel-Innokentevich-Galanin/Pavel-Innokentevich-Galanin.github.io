@@ -1,34 +1,39 @@
 import styles from './Skills.module.css';
 import arr__web_skills from './arr__web_skils';
 import arr__tools from './arr__tools';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Skills()
 {
     return (
         <div>
-            <h3>Web</h3>
-            <WriteSkills arr={arr__web_skills}/>
-            <h3>Other tools</h3>
-            <WriteSkills arr={arr__tools}/>
+            <h2>Langs and tools</h2>
+            <WriteSkills 
+                title="Web"
+                arr={arr__web_skills}
+            />
+            <WriteSkills
+                title="Other tools"
+                arr={arr__tools}
+            />
         </div>
     );
 }
 
 const WriteSkills = (props) => 
 {  
-    console.log(props.arr)
-    return  props.arr.map((object, index) =>
+    const MyHTML = () => props.arr.map((object, index) =>
         <div key={index} className={styles.item}>
-            <div className={styles.text}>{object.name}</div>
-            <div className={styles.progress_bar}>
-                <div
-                    className={styles.progress_bar__line}
-                    style={{
-                        width: `${object.value}%`
-                    }}
-                >
-                    {/*  */}
-                </div>
+            <span><FontAwesomeIcon icon={object.icon} color={object.color}/> </span>
+            <span>{object.name} </span>
+        </div>
+    );
+
+    return (
+        <div>
+            <h3>{props.title}</h3>
+            <div className={styles.block_for_items}>
+                <MyHTML />
             </div>
         </div>
     );

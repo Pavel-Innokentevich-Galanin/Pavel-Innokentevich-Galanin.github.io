@@ -1,23 +1,42 @@
+import
+{
+    faFileAlt,
+}
+from '@fortawesome/free-solid-svg-icons';
+import
+{
+    faGitAlt,
+    faGitkraken,
+    faLinux,
+    faUbuntu,
+}
+from '@fortawesome/free-brands-svg-icons';
+
 const arr__tools = [
     {
         'name': 'LaTeX',
-        'value': 80,
+        'icon': faFileAlt,
+        'color': '#000000',
     },
     {
         'name': 'Git',
-        'value': 80,
+        'icon': faGitAlt,
+        'color': '#f15233',
     },
     {
-        'name': 'Jupyter',
-        'value': 90,
+        'name': 'Git Kraken',
+        'icon': faGitkraken,
+        'color': '#189287',
     },
     {
         'name': 'Linux',
-        'value': 90,
+        'icon': faLinux,
+        'color': '#000000',
     },
     {
-        'name': 'Bash',
-        'value': 60,
+        'name': 'Ubuntu',
+        'icon': faUbuntu,
+        'color': '#db4914',
     },
 ];
 
